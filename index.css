@@ -1,11 +1,12 @@
 .section{
     transition-duration: 5s;
     width: 100%;
-    height: 100vh;
+    height: 980px;
     margin:0 ;
     padding: 0;
     top: 0;
     left: 0;
+    overflow: hidden;
     }
 body{
     margin: 0;
@@ -14,6 +15,10 @@ body{
     background-image: url("홈페이지/index_back.png");
     }
 
+
+.sns_top{
+    position: fixed;
+}
 .back_img{
     width: 100%;
     top: 0;
@@ -22,20 +27,46 @@ body{
     padding: 0;
 }
 
-.nav{
+/* .nav{
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: black;
     top: 0;
     left: 0;
     padding: 0;
     margin: 0;
     z-index: 99999;
-    position: absolute;
+    position: fixed;
 
+} */
+
+.menu_box{
+    background-color: black;
+    position: fixed;
+    width: 300px;
+    color: white;
+    height: 100vh;
+    top: 0;
+    left: -300px;
+    z-index: 10;
+}
+
+.menu_btn{
+    left: 0px;
+    top: 100px;
+    position: fixed;
+    
+}
+
+
+
+.home_left{
+    width: 50%;
+    height: auto;
 }
 
 .eng_logo {
+    
     left: 30px;
     position: relative;
     display:inline;
@@ -72,54 +103,106 @@ body{
 }
 
 .twitter_top{
-    top: -65px;
+    top: 20px;
     left: 1850px;
-    position: relative;
-    display: inline;
+    position: absolute;
 }
 
 .band_top{
-    top: -65px;
-    left: 1720px;
-    position: relative;
-    display: inline;
+    top:20px;
+    left: 1780px;
+    position: absolute;
 }
 
 .logo{
     position: relative;
     top: 50px;
-    left: 350px;
+    left: 450px;
     width: 80;
 }
 
 .form_top{
     position: relative;
     top: 50px;
-    left: 650px;
+    left: 730px;
 }
 
 .main_cut{
-    position: relative;
-    top: 40px;
-    left: 340px;
+    position: absolute;
+    top: 1970px;
+    left: 440px;
+    z-index: 9;
 }
 
 .form_back{
     top:30px;
     position: relative;
     left:330px;
+    z-index: 1;
 }
 
+.container{
+    z-index: 999;
+}
 .form_btn{
-    top:2140px;
-    left: 450px;
+    top:1220px;
+    left: 430px;
     position: absolute;
-    z-index: 99999;
+    z-index: 9;
 }
 
 .form_check{
-    top:2140px;
-    left: 770px;
+    top: 1220px;
+    left: 1170px;
     position: absolute;
-    z-index: 99999;
+    z-index: 9;
+}
+
+.world{
+    position: absolute;
+    top: 2811px;
+}
+
+.world:hover{
+    transform:scale(1.03);
+    transition: transform .7s;
+}
+
+.position{
+    position: absolute;
+    left: 480px;
+    top: 2811px;
+}
+
+.position:hover{
+    transform:scale(1.03);
+    transition: transform .7s;
+}
+
+.system{
+    position: absolute;
+    left: 960px;
+    top: 2811px;
+}
+
+.system:hover{
+    transform:scale(1.03);
+    transition: transform .7s;
+}
+
+.story{
+    position: absolute;
+    left: 1440px;
+    top: 2811px;
+}
+
+.story:hover{
+    transform:scale(1.03);
+    transition: transform .7s;
+}
+
+.left_img{
+    top:300px;
+    left: 1650px;
+    position: absolute;
 }
